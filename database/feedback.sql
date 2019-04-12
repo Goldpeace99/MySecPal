@@ -1,0 +1,8 @@
+CREATE TABLE feedback(
+    ID INT(11) NOT NULL AUTO_INCREMENT,
+	author VARCHAR(50) NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    description TEXT NOT NULL,
+    date DATETIME NOT NULL,
+	PRIMARY KEY (ID)
+);

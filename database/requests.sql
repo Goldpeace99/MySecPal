@@ -1,0 +1,11 @@
+CREATE TABLE requests(
+    ID INT(11) NOT NULL AUTO_INCREMENT,
+	company VARCHAR(50) NOT NULL,
+	contact VARCHAR(255) NOT NULL,
+    creditcard VARCHAR(255) NOT NULL,
+    title VARCHAR(255) NOT NULL,
+	logo VARCHAR(255) NOT NULL,
+    description TEXT NOT NULL,
+    dest TEXT NOT NULL,
+	PRIMARY KEY (ID)
+);

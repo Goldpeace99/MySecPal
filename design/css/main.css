@@ -1,0 +1,84 @@
+html { overflow-x: hidden; overflow-y: visible; }
+
+input { border: 2px solid #ccc; }
+
+/* header */
+#upper { position: absolute; top: 0px; left: 0px; width: 100%; height: 130px; margin: 0px; padding: 0px; background: linear-gradient(to bottom , #FFFFFF , #E5E5E5); }
+#logo { position: absolute; left: calc(40% - 326px); top: calc((130px - 76px) / 2); }
+#logregist { position: absolute; background: #FFFFFF; border: 2px solid #ccc; border-radius: 8px; left: calc(100% - 326px); top: calc((150px - 76px) / 2); width: 210px; height: 38px; }
+#logregist img { margin: 0px; position: relative; top: 5px; left: 2px; }
+#login { position: absolute; background: #FFFFFF; }
+#login a { position: absolute; margin: 10px; padding: 10px; }
+#registrate { position: absolute; left: 75px; background: #FFFFFF; }
+#bar { position: absolute; top: 130px; left: 0px; height: 120px; background: #6E80FE; width: 100%; }
+.burger-menu img { position: absolute; top: -10000000px; }
+
+#content { position: absolute; top: 280px; left: 0px; padding-bottom: 80px; height: auto; width: 100%; overflow: hidden; }
+#footer { position: absolute; bottom: 0px; left: 0px; width: 100%; height: 50px; background: #6E80FE; color: #FFFFFF; }
+
+.ltab { position: absolute; left: 0px; height: 300px; width: 350px; /*background: #6E80FE;*/ }
+.rtab { position: absolute; right: 0px; height: 300px; width: 350px; /*background: #6E80FE;*/ }
+.hex { width: 350px; }
+.hex .top { width: 0; border-bottom: 100px solid #6E80FE; border-left: 175px solid transparent; border-right: 175px solid transparent; }
+.hex .middle { width: 350px; height: 200px; background: #6E80FE; }
+.hex .middle img { position: absolute; left: calc((350px - 200px) / 2); bottom: calc((200px - 150px) / 2); width: 200px; height: 150px; }
+.hex .bottom { width: 0; border-top: 100px solid #6E80FE; border-left: 175px solid transparent; border-right: 175px solid transparent; }
+#flapp { }
+
+ul { list-style:none; padding-top: 0px; width: 900px; height: 120px; padding: 0px; position: relative; margin: 0px; left: calc((100% - 900px) / 2); }
+ul li {  }
+ul li a { line-height: 140px; float: left; /*padding: 0px 100px;*/ width: 300px; height: 120px; }
+ul li a img { width: 300px; height: 120px; }
+
+z { margin-right: 5.0em; }
+x { margin-right: 6.5em; }
+
+#tcpbox { position: relative; left: calc((100% - 900px) / 2); background: #F9F9F9; border-style: solid; border-color: #E8E8E8; border-radius: 8px; width: 900px; height: 720px; }
+#pannelbox {  position: relative; left: calc((100% - 900px) / 2); background: #F9F9F9; border-style: solid; border-color: #E8E8E8; border-radius: 8px; width: 900px; height: 500px; }
+#loginbox { position: relative; left: calc((100% - 600px) / 2); background: #F9F9F9; border-style: solid; border-color: #E8E8E8; border-radius: 8px; width: 600px; height: 500px; }
+#registerbox { position: relative; left: calc((100% - 750px) / 2); background: #F9F9F9; border-style: solid; border-color: #E8E8E8; border-radius: 8px; width: 750px; height: 610px; }
+#postbox { position: relative; left: calc((100% - 750px) / 2); background: #F9F9F9; border-style: solid; border-color: #E8E8E8; border-radius: 8px; width: 750px; height: 600px; }
+#termsbox { position: relative; left: calc((100% - 900px) / 2); background: #F9F9F9; border-style: solid; border-color: #E8E8E8; border-radius: 8px; width: 900px; height: 600px; }
+
+.bb { width: 100%; height: 25px; border-radius: 8px; border-color: #E8E8E8; }
+#button { height: 45px;margin-top: 3%; background: #6E80FE; border-radius: 5px; border-color: #6E80FE; }
+
+#innerbox { position: absolute; left: 50px; top: 30px; width: calc(100% - 100px); }
+
+#ip_result_handler { width: 400px; height: 250px; border-style: solid; overflow: auto; }
+#pannel_result_holder { width: 400px; height: 250px; border-style: solid; overflow: auto; }
+
+.rg { text-align: center; font-size: 40; margin-top: 15px; }
+.rlbtn { width: 40%; height: 40px; margin-top: 20px; background: #6E80FE; color: #FFFFFF; }
+.rltext { padding: 10px; font-size: 18;}
+.tb { width: 50%; height: 30px; }
+.terms { color: #3c4043; display: inline-block; font-family: sans-serif; font-size: 13px; font-weight: 500; letter-spacing: .8px; line-height: 20px; margin-left: 250px; margin-right: 550px; margin-top: 100px; }
+
+@media screen and (max-width: 900px)
+{
+    #bar { border-radius: 0px; height: 36px; }
+    .burger-menu img { position: absolute; left: calc(50% - 14px); top: 3px; display: block; height: 27px; width: 27px; cursor: pointer; }
+    #bar ul { overflow: hidden; background: #6E80FE; height: 0px; }
+    #bar ul.open { height: auto; -webkit-column-count: 4; -moz-column-count: 4; column-count: 4; -webkit-column-width: 100%; -moz-column-width: 100%; column-width: 100%; position: absolute; top: 36px; left: 0px; border-radius: 6px; border-radius: 0px 0px 6px 6px; }
+    #bar ul li { float: none; text-align: left; width: 100%; margin: 0px; }
+    #bar ul li a { color: #fff; padding: 10px; border-bottom: 1px solid #6E80FE; display: block; margin: 0px; width: 100%; position: relative; left: 180px; top: 4px; }
+    #bar ul li a:hover {  }
+}
+
+.text { font-size: 120%;  line-height: 1.6; border-style: groove; border-left: none; border-color: #6E80FE; border-radius: 5px; width: 700px; height: 175px; left: 355px; position:absolute; top: 110px; }
+.text_2 { text-align: right; font-size: 120%; line-height: 1.6; border-style: groove; border-right: none; border-color: #6E80FE; border-radius: 5px; width: 700px; height: 175px; right:355px; position: absolute; top: 110px; }
+.text_3 { font-size: 120%;  line-height: 1.6; border-style: groove; border-left: none; border-color: #6E80FE; border-radius: 5px; width: 700px; height: 175px; left: 355px; position: absolute; top: 110px; }
+
+#timer { margin-left: 600px; border-style: solid; border-color: #cac9cc; position: absolute; }
+
+.comBox { position: relative; width: 560px; padding: 15px; left: calc((100% - 560px) / 2 - 20px); margin-bottom: 4px; background-color: #fff; border-style: solid; border-color: #E8E8E8; border-radius: 8px; }
+.comBox p { font-family: arial; font-size: 14px; line-height: 16px; font-weight: 100; }
+.form { width: 400px; height: 80px; background-color: #fff; resize: none; }
+#feedback { text-align: center; font-size: 150%; }
+#feedbackbox { position: relative; left: calc((100% - 600px) / 2); background: #F9F9F9; border-style: solid; border-color: #E8E8E8; border-radius: 8px; width: 600px; height: 250px; }
+textarea { resize: none; width: 100%; height: 130%; border-style: solid; border-color: #E8E8E8; }
+.fbtn { width: 40%; height: 40px; margin-top: 20px; background: #6E80FE; color: #FFFFFF; } 
+
+table { margin-bottom: 35px; }
+th, td { width: 120px; border-style: solid; border-color: #E8E8E8; }
+hr { width: 100%; color: #E8E8E8; margin-bottom: 50px; }
